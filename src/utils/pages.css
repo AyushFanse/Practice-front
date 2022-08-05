@@ -1,0 +1,189 @@
+.pages_container_outter {
+    width: 100%;
+    height: auto;
+}
+
+.pages_inner {
+    width: 75%;
+}
+
+.pages_inner .pages_hearder {
+    margin-top: 45px;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    font-family: Aldrich;
+    font-weight: 400;
+}
+
+.pages_content_section {
+    margin-top: 35px;
+}
+
+.pages_content {
+    font-size: 1rem;
+    padding: 10px 0;
+    font-family: Arvo;
+    width: 100%;
+}
+
+.pages_content ul li {
+    list-style-type: disc;
+}
+
+.pages_contact_form_outter {
+    margin-top: 60px;
+    width: 100%
+}
+
+.pages_contact_form {
+    width: 100%;
+    gap: 20px;
+}
+
+.pages_contact_form_section_outter {
+    gap: 20px;
+    flex-direction: row;
+}
+
+.pages_contact_form .pages_contact_form_section_outter .pages_contact_form_section {
+    width: 100%;
+}
+
+.pages_contact_form .pages_contact_form_section_outter .pages_contact_form_section input {
+    width: 94%
+}
+
+.pages_contact_title {
+    font-family: Aldrich;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.pages_contact_form_section input,
+.pages_contact_form_section textarea {
+    font-size: 1.2rem;
+    padding: 10px;
+    font-family: Aldrich;
+    border: 1px solid var(--dark-back);
+    max-width: 94%;
+    min-width: 94%;
+}
+
+.pages_contact_form_icon {
+    font-size: 1rem;
+    padding: 15px 20px;
+    font-family: Aldrich;
+    background: var(--theme);
+    width: 70px;
+}
+
+.pages_content_size_guide {
+    width: 80%;
+    margin: 20px 0;
+}
+
+/** Request **/
+
+.pages_request_section {
+    width: 51%;
+    height: auto;
+    padding: 60px 0 80px 0;
+    gap: 15px;
+}
+
+.pages_request_headline {
+    font-size: 1.75rem;
+    font-family: 'Crimson text';
+    margin-top: 25px;
+    margin: 0;
+}
+
+.pages_request_content {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1rem;
+    line-height: 1.4;
+    width: 100%;
+}
+
+.pages_request_form {
+    text-align: start;
+    width: 100%;
+}
+
+.pages_request_form div {
+    padding: 15px 0;
+    width: 100%;
+}
+
+.pages_request_form div input {
+    width: 94%;
+    padding: 5px 13px;
+    background: #F4F4F4;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+.valide_start {
+    color: rgb(220, 32, 32);
+}
+
+.request_button {
+    padding: 15px 70px;
+    background: var(--theme);
+    color: var(--text);
+    font-weight: 700;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 8px 12px -10px var(--theme);
+}
+
+.powr_mark_logo {
+    width: 70px;
+    margin: 20px;
+}
+
+.powr_mark {
+    font-family: Montserrat;
+    text-decoration: none;
+    color: var(--dark-back);
+}
+
+.powr_mark span {
+    text-decoration-line: underline;
+}
+
+.hr {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .pages_inner {
+        width: 100%;
+    }
+
+    .pages_contact_form_section_outter {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .pages_contact_form .pages_contact_form_section_outter .pages_contact_form_section {
+        width: 100%;
+    }
+
+    .pages_inner .pages_hearder {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .pages_content_section {
+        margin-top: 15px;
+    }
+
+    .pages_request_section {
+        width: 95%;
+    }
+}

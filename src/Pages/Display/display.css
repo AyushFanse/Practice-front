@@ -1,0 +1,110 @@
+.display_video {
+    width: 100%;
+}
+
+.mar_50 {
+    padding: 50px 0;
+}
+
+.display_title {
+    font-size: 2rem;
+    font-family: Aldrich;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+/*& BROWSE &*/
+
+.browse_shirt_outter {
+    width: 100%;
+    position: relative;
+}
+
+.browse_shirt_img_outter {
+    width: 100%;
+}
+
+.browse_shirt_img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.browse_shirt_img img {
+    width: 100%;
+    height: auto
+}
+
+.browse_shirt_temp_outter {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.browse_shirt_temp_outter h2{
+    font-size: 2rem;
+    font-family: Aldrich;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin: 0 0 20px 0
+}
+
+.buy_now {
+    position: relative;
+    max-width: 210px;
+}
+
+.buy_now span {
+    background: var(--theme);
+    border-radius: 0;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.buy_now:hover span {
+    padding-right: 50px;
+}
+
+.arrow {
+    transform: translateX(40px);
+    transition: all 0.7s ease-in-out;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+
+.buy_now:hover .arrow {
+    opacity: 1;
+    transform: translateX(-50px);
+    color: var(--text);
+}
+
+
+.browse_shirt_temp_outter #icon {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .browse_shirt_outter {
+        flex-direction: column;
+    }
+
+    .browse_shirt_outter div {
+        width: 100%;
+        margin: auto;
+    }
+
+    .browse_shirt_temp_outter h2{
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .browse_shirt_outter div {
+        width: 100%;
+        margin: 0 6%;
+    }
+}

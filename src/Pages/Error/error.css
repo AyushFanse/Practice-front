@@ -1,0 +1,45 @@
+.error_outter {
+    width: 100%;
+    height: 100vh;
+    margin: 160px 0px;
+}
+
+.error_inner {
+    width: 100%;
+}
+
+.error_inner .error_hearder {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-family: Aldrich;
+    font-weight: 400;
+}
+
+.error_inner .error_message {
+    font-size: 1.2rem;
+    font-family: Arvo;
+    font-weight: 400;
+    margin: 0;
+}
+
+.error_navigate_home {
+    padding-top: 30px;
+}
+
+.navigate_home {
+    font-size: 1.2rem;
+    font-family: Arvo;
+    color: var(--dark-back);
+    border-bottom: 2px solid rgb(216, 216, 216);
+    text-decoration: none;
+}
+
+.error_navigate_home .timeline_underline {
+    background-image: linear-gradient(var(--dark-back), var(--dark-back));
+    transition: all 0.4s ease-in-out;
+}
+
+.timeline_underline:hover {
+    background-size: 100% 2px;
+    background-image: linear-gradient(var(--dark-back), var(--dark-back));
+}

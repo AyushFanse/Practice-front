@@ -1,0 +1,121 @@
+.collection_outer {
+    flex-wrap: wrap;
+    margin: 45px 0 100px 0;
+    gap:30px;
+}
+
+.collection_outer .card_out {
+    position: relative;
+    width: calc(33.333% - 20px);
+    height: 290px;
+    overflow: hidden;
+    background: #17172c;
+    cursor: pointer;
+}
+
+.collection_outer .card_out .card {
+    width: 100%;
+    height: 100%;
+}
+
+.collection_outer .card_out .card img {
+    object-fit: contain;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 1.4s ease-in-out;
+}
+
+.collection_outer .card_out .card::before {
+    opacity: 0;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #17172c42;
+    transition: all 0.5s ease-in-out;
+    z-index: 3;
+}
+
+.collection_outer .card_out .card:hover::before {
+    opacity: 1;
+}
+
+.collection_outer .card_out .card .card_data {
+    color: #fff;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.collection_outer .card_out .card .card_data .navigation {
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: row;
+    transition: all 0.5s ease-in-out;
+}
+
+.collection_outer .card_out .card .card_data .navigation h3 {
+    transform: translateY(0px);
+    font-family: Aldrich;
+    font-weight: 400;
+    margin-bottom: 20px;   
+    margin-left: 10px;
+    font-size: 1.5rem;
+    transition: all 0.7s ease-in-out;
+}
+
+.collection_outer .card_out .card:hover .card_data .navigation h3 {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.collection_outer .card_out .card .card_data .navigation .timeline_underline {
+    background-image: linear-gradient(var(--text), var(--text));
+    transition: all 0.5s ease-in-out;
+    width:fit-content;
+}
+
+.collection_outer .card_out .card:hover .card_data .navigation .timeline_underline {
+    background-size: 100% 3px;
+    background-image: linear-gradient(var(--text), var(--text));
+}
+
+@media (max-width: 980px) {
+    
+    .collection_outer .card_out .card .card_data .navigation h3 {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .collection_outer {
+        gap:20px;
+    }
+    
+    .collection_outer .card_out {
+        width: calc(50% - 10px);
+    }
+    
+    .collection_outer .card_out .card .card_data .navigation h3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .collection_outer .card_out {
+        height: 200px;
+    }
+    .collection_outer .card_out .card .card_data .navigation h3 {
+        font-size: 1rem;
+    }
+}

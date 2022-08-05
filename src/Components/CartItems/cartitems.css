@@ -1,0 +1,126 @@
+.cart_container {
+  width: 100%;
+  height: 100%;
+  font-family: Arvo;
+  color: var(--text);
+}
+
+.empty_cart {
+  color: var(--text);
+}
+
+.cart_item_outter {
+  width: 100%;
+  margin-top: 29.63px;
+  min-height: 281.466px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.cart_item {
+  width: 100%;
+  height: 129.5px;
+}
+
+.cart_image {
+  width: 90px;
+  height: 110.5px;
+  margin-right: 15px;
+}
+
+.cart_image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.order_details {
+  width: calc(100% - 90px);
+  height: 110.5px;
+  letter-spacing: 1px;
+}
+
+.order_product {
+  display: inline;
+  font-size: 1.1rem;
+  overflow: hidden;
+  overflow-x: auto;
+  text-align: left;
+}
+
+.order_type {
+  font-size: 0.8rem;
+  text-align: left;
+  margin: 8px 0;
+}
+
+.quantity_total {
+  width: 100%;
+}
+
+.quantity button,
+.quantity input,
+.oredr_note textarea {
+  width: 30px;
+  font-size: 1rem;
+  text-align: center;
+  background: transparent;
+  font-family: Arvo;
+  letter-spacing: 1px;
+  color: var(--text);
+  border: none;
+}
+
+.oredr_note textarea {
+  min-width: 92%;
+  max-width: 92%;
+  text-align: left;
+  font-size: 1rem;
+  padding: 5px 10px;
+  margin: 0 2px;
+}
+
+.total_amount {
+  font-size: 1rem;
+}
+
+.note_title {
+  margin: 10px 0;
+  font-size: 0.65rem;
+  font-family: Aldrich;
+  letter-spacing: 1px;
+  color: rgb(166, 166, 166);
+}
+
+.tally_and_order {
+  height: 100%;
+  width: 100%;
+  font-family: Aldrich;
+  letter-spacing: 1px;
+}
+
+.subtotal {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.order_note {
+  font-size: 0.525rem;
+  margin: 10px 0;
+  font-family: Arvo;
+  color: rgb(179, 179, 179);
+}
+
+.order_condition {
+  font-size: 0.45rem;
+  margin: 10px 0;
+  font-family: Aldrich;
+  letter-spacing: 2px;
+  color: rgb(179, 179, 179);
+}
+
+.order_condition input{
+  height: 10px;
+  margin:0;
+  margin-right:10px;
+}

@@ -1,0 +1,251 @@
+.footer_outter {
+    height: auto;
+    width: 100%;
+    background: var(--dark-back);
+    color: var(--theme);
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    font-family: Arvo;
+}
+
+
+@media (max-width: 768px) {
+    .footer_outter {
+        padding: 20px 0;
+    }
+
+    .footer_inner {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .policy {
+        min-width: 100%;
+    }
+
+    .policy ul {
+        padding-left: 0px
+    }
+
+    .refrral {
+        min-width: 100%;
+    }
+
+    .subscribe {
+        min-width: 100%;
+        margin: 0;
+    }
+
+    .subscribe_code {
+        width: calc(100% - 24px);
+    }
+
+    .mail_outter input {
+        width: calc(100% - 24px);
+    }
+
+    .social_media {
+        min-width: 100%;
+    }
+}
+
+.footer_payments ul {
+    list-style: none;
+    grid-gap: 15px;
+    margin: 0;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer_payments ul li {
+    width: 35px;
+    height: auto;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer_payments ul li path {
+    fill: var(--text);
+}
+
+.policy {
+    width: 23%;
+    padding: 0 10px;
+    margin: 0 10px;
+    font-family: Arvo;
+}
+
+.policy ul li {
+    gap: 20px;
+    padding: 5px 0;
+}
+
+.policy ul li .policy_links {
+    color: var(--text);
+    padding: 6px 0;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.refrral {
+    color: var(--text);
+    width: 27%;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+.refrral_title {
+    font-family: Aldrich;
+    font-size: 1.2rem;
+    padding: 12px 0;
+}
+
+.refrral_code_title {
+    font-family: Arvo;
+    font-size: 0.9rem;
+    padding: 12px 0;
+}
+
+.refrral_code {
+    font-family: Arvo;
+    font-size: 0.9rem;
+    padding: 12px 0;
+}
+
+.subscribe {
+    color: var(--text);
+    width: 27%;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+.subscribe_title {
+    font-family: Aldrich;
+    font-size: 1.2rem;
+    padding: 12px 0;
+}
+
+.subscribe_code {
+    font-family: Arvo;
+    font-size: 0.9rem;
+    padding: 12px 0;
+}
+
+.mail_outter {
+    border: 1px solid var(--text);
+    color: var(--text);
+    padding: 5px 10px;
+    width: 90%;
+}
+
+.mail_outter input {
+    background: var(--dark-back);
+    color: var(--text);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.social_media {
+    width: 23%;
+    padding: 10px 0;
+    margin: 0 10px;
+    gap: 20px;
+}
+
+.social_media .social_media_icon {
+    color: var(--text);
+}
+
+.footer .nav_currency {
+    transform: translateX(-30px);
+}
+
+.footer_payments .nav_currency .currency {
+    color: var(--text);
+    font-size: 1rem;
+    padding: 5px 8px;
+}
+
+.footer_payments .nav_currency .currency option {
+    color: var(--dark-back);
+}
+
+
+@media (min-width: 768px) {
+    .media_sm {
+        display: none;
+    }
+
+    .media_lg {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .footer_payments ul {
+        justify-content: flex-end;
+        padding: 5px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .media_sm {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .media_lg {
+        display: none;
+    }
+
+    .media_sm .hr {
+        width: 100%;
+        color: #181818;
+        border: 0.1px solid;
+        margin: 0;
+    }
+
+    .media_sm .refrral_title{
+        width:100%;
+        letter-spacing: 3px;
+        gap:10px;
+    }
+
+    .footer_payments ul {
+        justify-content: flex-start;
+    }
+
+    .footer_payments ul li {
+        width: 28px;
+        height: auto;
+    }
+
+    .policy ul li {
+        /* gap: 20px; */
+        padding: 0;
+    }
+
+    .policy ul li .policy_links {
+        padding: 5px 0;
+    }
+
+    .policy {
+        padding: 0;
+        width: 100%;
+    }
+}

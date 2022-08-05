@@ -1,0 +1,135 @@
+/*^ FONTS ^*/
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Roboto&family=Montserrat&family=Arvo:wght@400;700&family=Crimson+Text:wght@400;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --theme: #55cf7d;
+  --text: #fff;
+  --back: #111111;
+  --dark-back: #000;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  margin: block;
+}
+
+::-webkit-scrollbar-track {
+  border: 3px solid var(--text);
+  background: #bebebe;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme);
+  border-radius: 25px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.js {
+  justify-content: flex-start;
+}
+
+.flex.jc {
+  justify-content: center;
+}
+
+.flex.je {
+  justify-content: flex-end;
+}
+
+.flex.jsb {
+  justify-content: space-between;
+}
+
+.flex.jse {
+  justify-content: space-evenly;
+}
+
+.flex.jsa {
+  justify-content: space-around;
+}
+
+.flex.as {
+  align-items: flex-start;
+}
+
+.flex.ac {
+  align-items: center;
+}
+
+.flex.ae {
+  align-items: flex-end;
+}
+
+.flex.row {
+  flex-direction: row;
+}
+
+.flex.col {
+  flex-direction: column;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tj {
+  text-align: justify;
+}
+
+.ts {
+  text-align: start;
+}
+
+.te {
+  text-align: end;
+}
+
+#icon {
+  font-size: 1.7rem;
+  padding: 7.8px 8px;
+  cursor: pointer;
+}
+
+.timeline_underline {
+  background-size: 0 3px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  border-radius: 15px;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.page_path {
+  font-size: 0.7rem;
+  font-family: Arvo;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .page_path {
+    font-size: 0.6rem;
+    font-family: Arvo;
+  }
+}
